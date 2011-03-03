@@ -1,0 +1,44 @@
+<?php
+/**
+ * Настройки скрипта
+ */
+
+$config = array(
+    // настройки почтового ящика
+    'mail' => array(
+        // логин
+        'username' => '...@gmail.com',
+
+        // пароль от ящика
+        'password' => '',
+
+        // ящик
+        'mailbox'  => 'INBOX',
+
+        // критерии по которым собираем почту
+        'criteria' => 'UNSEEN',
+
+        // сервер
+        'host'     => 'imap.gmail.com',
+
+        // порт и параметры ящика
+        'port'     => '993/imap/ssl',
+    ),
+    // настройки базы для складирования писем
+    'db' => array(
+        //  сервер
+        'host'     => 'localhost',
+
+        // название БД
+        'dbname'   => 'firecall',
+
+        // таблица
+        'table'    => 'messages',
+
+        // пользователь
+        'user'     => 'firecall',
+
+        // пароль
+        'password' => 'firecall',
+    ),
+);
